@@ -53,3 +53,24 @@ const ab = {
 };
 
 const two = { ...ob, ...ab };
+
+/********* Classes *********/
+class Human {
+    constructor(name, lastName) {
+        this.name = name;
+        this.lastName = lastName;
+    }
+}
+
+class Baby extends Human {
+    cry() {
+        console.log('Waaaaaa');
+    }
+
+    sayName() {
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+const myBaby = new Baby('mini', 'me');
+mnBaby.cry();
